@@ -99,7 +99,7 @@ wl:
 		}else{
 		fprintf(stderr,"普通用户\n\n");
 		}
-		fprintf(stderr,"使用太初编译器造成的一切后果由用户自行承担，我司保留太初编译器所有解释权。\n严禁使用太初编译器进行违法犯罪活动！\n\n");
+		fprintf(stderr,"传奇霸业一刀999,开局送满级坐骑，等你来玩。\n使用太初编译器造成的一切后果由用户自行承担，我司保留太初编译器所有解释权。\n严禁使用太初编译器进行违法犯罪活动！\n\n");
 		if(argc>1)goto logs;
 		fprintf(stderr,"使用%s 参数... 进行编译，使用参数--vip查看会员详情，--help获取帮助\n",argv[0]);
 	}
@@ -189,6 +189,7 @@ end:
 	}
 	if(ok){
 		argv[0]="太初编译器";
+		fprintf(stderr,"感谢使用太初编译器\nXX贷,新用户可凭免息卷享受1秒免息，秒利率最低2147483647%，最快一分钟到账\n");
 		if(help){
 			sprintf(input,"gcc %s |sed 's/[gG][cC][cC]/太初编译器/g' |sed 's/[cC][lL][aA][nN][gG]/太初编译器/g'",argv[helpi]);
 			execlp("sh",argv[0],"-c",input,NULL);
